@@ -1,13 +1,11 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="13" x="10" y="17">
+  <block type="controls_whileUntil" id="82" inline="false" x="105" y="52">
+    <field name="MODE">UNTIL</field>
+    <statement name="DO">
+      <block type="movement_forward" id="92"></block>
+    </statement>
     <next>
-      <block type="robot_delay" id="15" inline="true">
-        <value name="DELAY">
-          <block type="math_number" id="22">
-            <field name="NUM">1000</field>
-          </block>
-        </value>
-      </block>
+      <block type="movement_stop" id="102"></block>
     </next>
   </block>
 </xml>
