@@ -1,11 +1,11 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="82" inline="false" x="105" y="52">
+  <block type="controls_whileUntil" id="1" inline="false" x="105" y="52">
     <field name="MODE">UNTIL</field>
     <statement name="DO">
-      <block type="movement_forward" id="92"></block>
+      <block type="movement_forward" id="2"></block>
     </statement>
     <next>
-      <block type="movement_stop" id="102"></block>
+      <block type="movement_stop" id="3"></block>
     </next>
   </block>
 </xml>
