@@ -17,20 +17,6 @@
                     <field name="NUM">750</field>
                   </block>
                 </value>
-                <next>
-                  <block type="movement_setmotors" id="108" inline="true">
-                    <value name="BOTHMOVLEFT">
-                      <block type="math_number" id="109">
-                        <field name="NUM">96</field>
-                      </block>
-                    </value>
-                    <value name="BOTHMOVRIGHT">
-                      <block type="math_number" id="110">
-                        <field name="NUM">96</field>
-                      </block>
-                    </value>
-                  </block>
-                </next>
               </block>
             </next>
           </block>
