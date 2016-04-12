@@ -1,40 +1,44 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="1" inline="false" x="90" y="39">
-    <field name="MODE">WHILE</field>
-    <value name="NUMBER">
-      <block type="sensor_button" id="2">
-        <field name="OBJECT">ENTER</field>
-      </block>
-    </value>
-    <statement name="DO">
-      <block type="movement_forward" id="3">
-        <next>
-          <block type="robot_delay" id="46" inline="true">
-            <value name="DELAY">
-              <block type="math_number" id="53">
-                <field name="NUM">75000</field>
-              </block>
-            </value>
+  <block type="movement_forward" id="130" x="90" y="16">
+    <next>
+      <block type="controls_whileUntil" id="1" inline="false">
+        <field name="MODE">WHILE</field>
+        <value name="NUMBER">
+          <block type="sensor_button" id="2">
+            <field name="OBJECT">ENTER</field>
+          </block>
+        </value>
+        <statement name="DO">
+          <block type="movement_forward" id="3">
             <next>
-              <block type="movement_setmotors" id="108" inline="true">
-                <value name="BOTHMOVLEFT">
-                  <block type="math_number" id="109">
-                    <field name="NUM">96</field>
+              <block type="robot_delay" id="46" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="53">
+                    <field name="NUM">75000</field>
                   </block>
                 </value>
-                <value name="BOTHMOVRIGHT">
-                  <block type="math_number" id="110">
-                    <field name="NUM">96</field>
+                <next>
+                  <block type="movement_setmotors" id="108" inline="true">
+                    <value name="BOTHMOVLEFT">
+                      <block type="math_number" id="109">
+                        <field name="NUM">96</field>
+                      </block>
+                    </value>
+                    <value name="BOTHMOVRIGHT">
+                      <block type="math_number" id="110">
+                        <field name="NUM">96</field>
+                      </block>
+                    </value>
                   </block>
-                </value>
+                </next>
               </block>
             </next>
           </block>
+        </statement>
+        <next>
+          <block type="movement_stop" id="120"></block>
         </next>
       </block>
-    </statement>
-    <next>
-      <block type="movement_stop" id="120"></block>
     </next>
   </block>
 </xml>
