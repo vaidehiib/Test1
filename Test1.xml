@@ -7,7 +7,17 @@
       </block>
     </value>
     <statement name="DO">
-      <block type="movement_forward" id="3"></block>
+      <block type="movement_forward" id="3">
+        <next>
+          <block type="robot_delay" id="46" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="53">
+                <field name="NUM">750</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
     </statement>
   </block>
 </xml>
