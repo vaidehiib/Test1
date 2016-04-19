@@ -1,34 +1,34 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="7" inline="false" x="73" y="32">
+  <block type="controls_whileUntil" id="1" inline="false" x="10" y="26">
     <field name="MODE">UNTIL</field>
     <value name="NUMBER">
-      <block type="logic_compare" id="35" inline="true">
+      <block type="logic_compare" id="2" inline="true">
         <field name="OP">LT</field>
         <value name="A">
-          <block type="sensor_spectrometer" id="27">
+          <block type="sensor_spectrometer" id="3">
             <field name="LIGHT">BLUE</field>
           </block>
         </value>
         <value name="B">
-          <block type="math_number" id="36">
+          <block type="math_number" id="4">
             <field name="NUM">80</field>
           </block>
         </value>
       </block>
     </value>
     <statement name="DO">
-      <block type="oled_cleardisplay" id="9">
+      <block type="oled_cleardisplay" id="5">
         <next>
-          <block type="movement_forward" id="3">
+          <block type="movement_forward" id="6">
             <next>
-              <block type="robot_delay" id="4" inline="true">
+              <block type="robot_delay" id="7" inline="true">
                 <value name="DELAY">
-                  <block type="math_number" id="5">
+                  <block type="math_number" id="8">
                     <field name="NUM">2500</field>
                   </block>
                 </value>
                 <next>
-                  <block type="movement_stop" id="6"></block>
+                  <block type="movement_stop" id="9"></block>
                 </next>
               </block>
             </next>
